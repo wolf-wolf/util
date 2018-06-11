@@ -8,7 +8,7 @@
 
 #### 数组方法
 - *insertArrToArr*: 在数组的指定位置加入新数组
-- *tree2Map*: 讲树形结构转换为Map结构，其中tree中的子列表的属性名为children
+- *tree2Map*: 将树形结构转换为Map结构，其中tree中的子列表的属性名为children
 - *removeSpEle*: 剔除数组中制定的元素
 
 #### 一些常用算法
