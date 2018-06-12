@@ -10,7 +10,7 @@
 - *insertArrToArr*: 在数组的指定位置加入新数组
 - *tree2Map*: 将树形结构转换为Map结构，其中tree中的子列表的属性名为children
 - *removeSpEle*: 剔除数组中制定的元素
-- *createSpArray*: 生成指定长度有统一初始值的数组<font color=red>**初始值为对象，数组等引用类型时，需注意器所有元素为同一引用**</font>
+- *createSpArray*: 生成指定长度有统一初始值的数组，<font color=red>**注意：初始值为对象，数组等引用类型时，需注意器所有元素为同一引用**</font>
 
 #### 一些常用算法
 - *S4*: 四位随机数生成器
