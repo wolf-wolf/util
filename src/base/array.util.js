@@ -33,9 +33,15 @@ class LM_util_array {
      * @returns {Array[]}
      *
      * @example
-     * createSpArray(4,{});
+     * let res = createSpArray(4,{});
      * result：
-     * [{}, {}, {}, {}]
+     * res = [{}, {}, {}, {}]
+     *
+     * @attention 若val是对象的话，则为引用，所有值将同步改变
+     * 如上结果中
+     * res[0].hi = 'hi';
+     * 则
+     * res = [{hi:'hi'},{hi:'hi'},{hi:'hi'},{hi:'hi'}]
      */
     static createSpArray(len, val) {
         return Array(len).fill(val);
