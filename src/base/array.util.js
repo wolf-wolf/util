@@ -26,6 +26,22 @@ class LM_util_array {
     }
 
     /**
+     * 生成指定长度有统一初始值的数组
+     *
+     * @param {Number} len - 长度
+     * @param {*} val - 初始值
+     * @returns {Array[]}
+     *
+     * @example
+     * createSpArray(4,{});
+     * result：
+     * [{}, {}, {}, {}]
+     */
+    static createSpArray(len, val) {
+        return Array(len).fill(val);
+    }
+
+    /**
      * 剔除数组中制定的元素
      *
      * @param {Array} arr - 待操作的数组
