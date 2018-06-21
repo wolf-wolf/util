@@ -36,6 +36,8 @@
 
 #### 字符串
 - *strToArr*: 将可能是数组或字符串的数据转换为数组
+- *initialCapital*: 首字母大写
+- *pad*: 对字符串进行补位操作
 
 #### 时间日期
 - *formatDate*: 将时间转换为对应格式
@@ -45,6 +47,7 @@
 - *isFunction*: 是否为函数
 - *isObject*: 是否为对象
 - *isNumber*: 是否为数字
+- *isInTypes*: 判断是否在给定的类型中
 
 
 #### URL操作
