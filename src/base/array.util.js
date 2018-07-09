@@ -13,7 +13,7 @@ class LM_util_array {
      * let arr2 = ['a','b','c'];
      *
      * LM_util_array.insertArrToArr(1,arr1,arr2);
-     * //result [1, 2, 'a', 'b', 'c', 3]
+     * //result ["a", "b", 1, 2, 3, "c"]
      */
     static insertArrToArr(idx, insertArr, targetArr) {
         if (insertArr) {
