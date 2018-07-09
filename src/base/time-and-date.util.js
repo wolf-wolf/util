@@ -18,7 +18,7 @@ class LM_util_timeAndDate {
             milliseconds = date.getMilliseconds();
         return format
             .replace(yearPtn, year)
-            .replace(monthPtn, month)
+            .replace(monthPtn, month + 1)
             .replace(dayPtn, day)
             .replace(hoursPtn, hours)
             .replace(minutesPtn, minutes)
