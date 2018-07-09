@@ -11,9 +11,9 @@ class LM_util_url {
         let r = window.location.search.substr(1).match(reg);
         let q = window.location.pathname.substr(1).match(regRewrite);
         if (r !== null) {
-            return unescape(r[2]);
+            return decodeURIComponent(r[2]);
         } else if (q !== null) {
-            return unescape(q[2]);
+            return decodeURIComponent(q[2]);
         } else {
             return null;
         }
