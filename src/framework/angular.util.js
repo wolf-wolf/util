@@ -4,7 +4,7 @@
 /**
  * 通过promise实现同步数据流
  */
-class DataStream {
+export class DataStream {
     constructor(data = null) {
         this.data = data;
         this.promiseList = [];
@@ -41,7 +41,7 @@ class DataStream {
  * @param {Object} scope - 作用域
  * @param {Function} fn - 要执行的函数
  */
-function safeApply(scope, fn) {
+export function safeApply(scope, fn) {
     let phase = scope.$root.$$phase;
     if (phase === '$apply' || phase === '$digest') {
         if (fn && (typeof (fn) === 'function')) {
@@ -52,16 +52,16 @@ function safeApply(scope, fn) {
     }
 }
 
-let exports = null;
+let exportFunc = null;
 try {
     if (angular) {
-        exports = {
+        exportFunc = {
             DataStream: DataStream,
             safeApply: safeApply
         }
     }
 } catch (e) {
-    exports = null;
+    exportFunc = null;
 }
 
-module.exports = exports;
+export default exportFunc;

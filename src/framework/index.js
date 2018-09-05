@@ -1,5 +1,5 @@
-const angular_util = require('./angular.util');
+import angular_util from './angular.util';
 
-module.exports.LM_framework_util = {
-    angular: angular_util,
-};
+export default {
+    angular_util
+}

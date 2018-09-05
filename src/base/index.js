@@ -1,16 +1,16 @@
-const array_util = require('./array.util');
-const code_algorithm_util = require('./code-algorithm.util');
-const other_util = require('./other.util');
-const env_util = require('./env.util');
-const image_util = require('./image.util');
-const obj_util = require('./obj.util');
-const reg_util = require('./reg.util');
-const string_util = require('./string.util');
-const time_and_date_util = require('./time-and-date.util');
-const type_comparison_util = require('./type-comparison.util');
-const url_util = require('./url.util');
+import array_util from './array.util';
+import code_algorithm_util from './code-algorithm.util';
+import other_util from './other.util';
+import env_util from './env.util';
+import image_util from './image.util';
+import obj_util from './obj.util';
+import reg_util from './reg.util';
+import string_util from './string.util';
+import time_and_date_util from './time-and-date.util';
+import type_comparison_util from './type-comparison.util';
+import url_util from './url.util';
 
-module.exports = {
+export default {
     array: array_util,
     image: image_util,
     obj: obj_util,

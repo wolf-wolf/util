@@ -5,6 +5,9 @@ class LM_util_image {
      * @return {object} - Blob对象
      */
     static dataURLtoBlob(dataUrl) {
+        if (!window) {
+            return;
+        }
         let [mime, dataStr] = dataUrl.match(/[^:]*:([^;]*);[^,]*,(.*)/).slice(1);
         return new Blob([Uint8Array.from(window.atob(dataStr).split('').map(value => value.charCodeAt(0)))], {type: mime});
     }

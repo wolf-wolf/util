@@ -1,8 +1,8 @@
 /**
  * 使用iframe进行文件下载
- * @param {*} url - 待下载的文件的Url 
+ * @param {*} url - 待下载的文件的Url
  */
-function downloadFileByIFrame(url) {
+export function downloadFileByIFrame(url) {
     if (!window) {
         return;
     }
@@ -15,6 +15,6 @@ function downloadFileByIFrame(url) {
     window.LM_DOWNLOAD_IFRAME.style.display = "none";
 }
 
-module.exports = {
-    downloadFileByIFrame: downloadFileByIFrame
-};
+export default {
+    downloadFileByIFrame
+}
