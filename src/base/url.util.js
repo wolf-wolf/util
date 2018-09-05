@@ -6,7 +6,7 @@
  */
 export function getQueryString(name) {
     if (!location) {
-        return;
+        return null;
     }
 
     let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
@@ -26,7 +26,7 @@ export function getQueryString(name) {
  */
 export function getQuerySet() {
     if (!location) {
-        return;
+        return null;
     }
     let queryStr = location.search.substr(1, location.search.length);
     let kVArr = queryStr.split('&');
@@ -66,6 +66,9 @@ export function getQuerySet() {
  * 结果为：http://localhost:8091/views/article/articleDetail.html?a=1&b=2
  */
 export function setUrlQuery(newQuerySet, config = {isApply: true}) {
+    if (!location) {
+        return '';
+    }
     let resQuerySet = config.isWithOld ? Object.assign({}, getQuerySet(), newQuerySet) : newQuerySet;
 
     let resSearch = Object.keys(resQuerySet).map(key => {
