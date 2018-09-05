@@ -1,10 +1,6 @@
-const path = require('path');
-module.exports = {
-    entry: {
-        main: './index.js'
-    },
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, '../dist')
-    }
-};
+const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
+
+module.exports = merge(common, {
+    mode: 'production',
+});

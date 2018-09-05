@@ -1,13 +1,16 @@
 {
-  "name": "lm_utils",
-  "version": "1.0.0",
-  "description": "说明 --------------------- 方法列表 --------------------- ### 基础工具",
-  "main": "index.js",
+  "name": "lm_common_utils",
+  "version": "1.0.14",
+  "description": "base util methods",
   "scripts": {
-    "build": "webpack --config=config/webpack.dev.js",
-    "server": "webpack-dev-server --config=config/webpack.dev.js",
+    "start": "webpack --config=config/webpack.dev.js",
+    "build": "webpack --config=config/webpack.pro.js",
     "test": "node ./node_modules/.bin/mocha test"
   },
+  "main": "./dist/AlphaUMa.js",
+  "files": [
+    "dist/*.*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wolf-wolf/util.git"
@@ -31,8 +34,9 @@
     "clean-webpack-plugin": "^0.1.19",
     "mocha": "^5.2.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.15.1",
+    "webpack": "^4.17.2",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.4"
   }
 }

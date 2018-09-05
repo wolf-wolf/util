@@ -10,7 +10,7 @@ const time_and_date_util = require('./time-and-date.util');
 const type_comparison_util = require('./type-comparison.util');
 const url_util = require('./url.util');
 
-module.exports.LM_base_util = {
+module.exports = {
     array: array_util,
     image: image_util,
     obj: obj_util,
