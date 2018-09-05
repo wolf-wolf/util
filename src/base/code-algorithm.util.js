@@ -1,4 +1,4 @@
-export function S4() {
+export function s4() {
     return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 }
 
@@ -7,7 +7,7 @@ export function S4() {
  * @returns {string}
  */
 export function getUUid() {
-    return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+    return (s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4());
 }
 
 /**
@@ -54,5 +54,5 @@ export default {
     characterEscape,
     getUUid2,
     getUUid,
-    S4
+    s4
 }
