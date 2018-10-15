@@ -1,4 +1,4 @@
-import LM_util_string from 'string.util';
+import LM_util_string from './string.util';
 
 /**
  * 是否为指定类型
