@@ -1,3 +1,5 @@
+import LM_util_string from 'string.util';
+
 /**
  * 是否为指定类型
  *
@@ -17,7 +19,7 @@ export function isType(data, type) {
  * @returns {Boolean}
  */
 export function isString(data) {
-    return LM_util_codeAlgorithm.isType(data, 'string');
+    return isType(data, 'string');
 }
 
 /**
@@ -27,7 +29,7 @@ export function isString(data) {
  * @returns {Boolean}
  */
 export function isFunction(data) {
-    return LM_util_codeAlgorithm.isType(data, 'function');
+    return isType(data, 'function');
 }
 
 /**
@@ -37,7 +39,7 @@ export function isFunction(data) {
  * @returns {Boolean}
  */
 export function isObject(data) {
-    return LM_util_codeAlgorithm.isType(data, 'object');
+    return isType(data, 'object');
 }
 
 /**
@@ -47,7 +49,7 @@ export function isObject(data) {
  * @returns {*}
  */
 export function isNumber(data) {
-    return LM_util_codeAlgorithm.isType(data, 'number');
+    return isType(data, 'number');
 }
 
 /**
@@ -61,7 +63,7 @@ export function isInTypes(data, types) {
     let isInTypes = false;
 
     for (let i = 0; i < types.length; i++) {
-        if (isInTypes = LM_util_typeComparison.isType(data, types[i])) {
+        if (isInTypes = isType(data, types[i])) {
             break;
         }
     }
