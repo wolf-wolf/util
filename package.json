@@ -1,6 +1,6 @@
 {
   "name": "lm_common_utils",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "base util methods",
   "scripts": {
     "start": "webpack --config=config/webpack.dev.js",

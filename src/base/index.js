@@ -9,6 +9,7 @@ import string_util from './string.util';
 import time_and_date_util from './time-and-date.util';
 import type_comparison_util from './type-comparison.util';
 import url_util from './url.util';
+import cookie_util from './cookie.util';
 
 export default {
     array: array_util,
@@ -22,4 +23,5 @@ export default {
     time: time_and_date_util,
     type: type_comparison_util,
     url: url_util,
+    cookie: cookie_util
 };

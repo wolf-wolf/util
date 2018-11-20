@@ -11,6 +11,10 @@ export function strToArr(data) {
     }
 }
 
+export function replaceSpace(str, p = '') {
+    return str.replace(/\s+/g, p)
+}
+
 /**
  * 首字母大写
  *
