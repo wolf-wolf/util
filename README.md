@@ -1,6 +1,20 @@
 # 工具库
 
 说明
+### 使用说明
+
+node：
+
+```JavaScript
+const AlphaUMa = require('lm_common_utils').default;
+```
+
+import：
+
+```JavaScript
+import AlphaUMa from 'lm_common_utils';
+```
+
 ---------------------
 方法列表
 ---------------------
