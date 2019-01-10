@@ -1,4 +1,4 @@
-// import {replaceSpace} from "./string.util";
+import {replaceSpace} from "./string.util";
 
 /**
  * 获取制定cookie字段

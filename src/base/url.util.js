@@ -1,3 +1,5 @@
+import {removeSpEle} from "./array.util";
+
 /**
  * 获取Url中对应字段的值
  *
@@ -103,4 +105,22 @@ export function delUrlQueryByKey(key, config = {isApply: true}) {
     return setUrlQuery(oldQuerySet, config);
 }
 
-export default {getQueryString, delUrlQueryByKey, setUrlQuery};
+/**
+ * 更新URL但不刷新当前页面
+ * @param {Object} config
+ * @param {Object} config.state
+ * @param {String} config.title - 标题
+ * @param {String} config.url - 新URL
+ */
+export function changeUrlWithoutRefresh(config) {
+    if (window.history) {
+        window.history.pushState(config.state, config.title, config.url);
+    }
+}
+
+export default {
+    getQueryString,
+    delUrlQueryByKey,
+    setUrlQuery,
+    changeUrlWithoutRefresh
+};

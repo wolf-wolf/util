@@ -41,6 +41,7 @@
 
 #### 时间日期
 - *formatDate*: 将时间转换为对应格式
+- *departTimestamp*: 将时间戳按照给定的配置进行日，时，分，秒，毫秒，提取
 
 #### 类型判断
 - *isString*: 是否为字符串
@@ -49,12 +50,12 @@
 - *isNumber*: 是否为数字
 - *isInTypes*: 判断是否在给定的类型中
 
-
 #### URL操作
 - *getQueryString*: 获取Url中对应字段的值
 - *getQuerySet*: 获取URL中的检索参数，以键值对的方式返回
 - *setUrlQuery*: 设置URL的参数
 - *delUrlQueryByKey*: 根据参数删除URL中的某个检索参数
+- *changeUrlWithoutRefresh*: 更新URL但不刷新当前页面
 
 ### 框架相关工具
 #### angular1
