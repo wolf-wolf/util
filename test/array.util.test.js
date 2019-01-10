@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 
-const AlphaUMa = require('../dist/AlphaUMa').default;
+const AlphaUMa = require('../dist/AlphaUMa');
 
 describe('insertArrToArr', () => {
     it('should be [1, 2, \'a\', \'b\', \'c\', 3]', function () {
