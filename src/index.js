@@ -1,3 +1,3 @@
-import AlphaUMa from './base/index';
+import all from './base/index';
 
-export default AlphaUMa;
+export const AlphaUMa = all;

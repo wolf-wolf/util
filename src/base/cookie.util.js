@@ -67,3 +67,9 @@ export function checkCookie(name) {
     return !!getCookieByName(name);
 }
 
+export default {
+    getCookieByName,
+    setCookie,
+    checkCookie
+}
+
