@@ -43,6 +43,7 @@ import AlphaUMa from 'lm_common_utils';
 
 #### 对象处理
 - *getObjPropertyByPath*: 通过path获取对象多层级下的属性值
+- *isEmpty*: 判断传入的对象是否为空对象
 
 #### 正则表达式
 - *CHINESE*: 中文字符匹配

@@ -1,3 +1,5 @@
+import {isObject} from "./type-comparison.util";
+
 /**
  * 通过path获取对象多层级下的属性值
  * @param {Object} obj - 对象数据
@@ -21,6 +23,20 @@ export function getObjPropertyByPath(obj, path) {
     return res;
 }
 
+/**
+ * 判断传入的对象是否为空对象
+ * @param {Object} obj - 带判断的对象
+ * @returns {boolean}
+ */
+export function isEmpty(obj) {
+    if (isObject(obj)) {
+        return !Object.keys(obj).length;
+    } else {
+        throw new Error('params must be an object')
+    }
+}
+
 export default {
-    getObjPropertyByPath
+    getObjPropertyByPath,
+    isEmpty
 }
